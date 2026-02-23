@@ -1,5 +1,5 @@
 body{
-    background-image: url('/images/pink-garden.jpg');
+    background-image: url('images/pink-garden.jpg');
     background-position: 25% 75%;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body{
     height: 100%;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 .envelope img{
     object-fit: cover;
