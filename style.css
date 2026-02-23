@@ -18,11 +18,17 @@ body{
 .envelope img{
     object-fit: cover;
     width: 50%;
+     transition: transform 1s ease;
+}
+
+.envelope img:hover{
+    transform: translate(-10%, -10%) scale(0.5);
 }
 
 @media (max-width: 767px) {
     body{
-          background-position: 30% 75%;
+          /* background-position: 30% 75%; */
+          background-size: cover;
     }
  .envelope img{
     object-fit: cover;
