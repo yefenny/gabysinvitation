@@ -1,5 +1,6 @@
 body{
     background-image: url('images/pink-garden.jpg');
+     background-repeat: no-repeat;
     background-position: 25% 75%;
     margin: 0;
     padding: 0;
@@ -20,7 +21,11 @@ body{
 }
 
 @media (max-width: 767px) {
+    body{
+          background-position: 30% 75%;
+    }
  .envelope img{
+    object-fit: cover;
     width: 90%;
 }
 }
