@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela's Quinceañera</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <section class="envelope">
-        <img src="images/front-envelope -green.png" alt="">
+    <section class="envelope" id="front-envelope" onclick="hideEnvelope()">
+        <img class="front" src="images/front-envelope -green.png" alt="green envelope front">
     </section>
+    <section class="invite" id="open-envelope" onclick="hideEnvelope()">
+        <img class=" open-envelope" src="images/open-envelope-green-lily.png" alt="open green envelope">
+        <img class="close-envelope" src="images/back-envelope-green.png" alt="close green envelope">
+        <img class="invite-letter" src="images/envelope-letter-light-pink.png" alt="pink letter invite">
+
+    </section>
+
 </body>
 </html>
