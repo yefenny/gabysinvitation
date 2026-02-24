@@ -1,5 +1,6 @@
 body{
     background-image: url('images/pink-garden.jpg');
+       background-size: cover;
      background-repeat: no-repeat;
     background-position: 25% 75%;
     margin: 0;
@@ -8,7 +9,7 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: clip;
 }
 .envelope{
     visibility: hidden;
@@ -30,14 +31,17 @@ body{
     flex-direction: row;
     width: 100%;
     align-items: center;
+    overflow: clip;
+    justify-content: center;
 }
 
 
 .open-envelope{
      object-fit: cover;
     position: absolute;
-    width: 65%;
-    top: -13%;
+    width: 80%;
+    top: -20%;
+    left: 0%;
     
 }
 
@@ -45,9 +49,9 @@ body{
 .close-envelope{
      object-fit: cover;
     position: absolute;
-    width: 65%;
+    width: 80%;
     bottom: -5%;
-    right: -15%;
+    right: -23%;
     transform: rotate(-0.25turn);
     
 }
@@ -55,12 +59,23 @@ body{
 .invite-letter{
     object-fit: cover;
     position: absolute;
-    top: 0%;
-    width: 120%;
-    left: -10%;
+    top: -5%;
+    width: 150%;
+  
+    
 }
 
 @media (max-width: 767px) {
+    body{
+          /* background-position: 30% 75%; */
+          background-size: cover;
+    }
+ .envelope img{
+    object-fit: cover;
+    width: 90%;
+}
+}
+@media (min-width: 767px) {
     body{
           /* background-position: 30% 75%; */
           background-size: cover;
