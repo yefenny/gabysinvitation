@@ -42,7 +42,7 @@ body{
 .open-envelope{
      object-fit: cover;
     position: absolute;
-    width: 280px;
+    width: 65%;
     top: -20%;
     left: 0%;
     
@@ -52,7 +52,7 @@ body{
 .close-envelope{
      object-fit: cover;
     position: absolute;
-    width: 280px;
+    width: 65%;
     bottom: -13%;
     right: 0%;
     /* transform: rotate(-0.25turn); */
@@ -63,7 +63,7 @@ body{
     object-fit: cover;
     position: absolute;
     top: -5%;
-    width: 150%;
+    width: 120%;
   
     
 }
