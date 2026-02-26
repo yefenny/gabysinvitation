@@ -124,6 +124,12 @@ body{
 
 
 @media (orientation: landscape) {
+
+    .envelope img{
+    object-fit: cover;
+    width: 90vh;
+
+}
   /* CSS rules to apply when the width is greater than the height */
      .invite{
     object-fit: cover;
