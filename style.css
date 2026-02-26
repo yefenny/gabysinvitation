@@ -77,9 +77,13 @@ body{
     
 }
 
-.invite-letter:focus{
+/* .invite-letter:focus{
     transform: scale(1.5);
 
+} */
+
+.scale{
+    transform: scale(1.5);
 }
 
 @media (max-width: 767px) {

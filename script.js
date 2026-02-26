@@ -25,3 +25,12 @@ setTimeout(() => {
 }, transitionDuration);
 
 }
+
+function zoomInvite(){
+     const iLetter = document.getElementById("invite-letter");
+    if (iLetter.classList.contains('scale')){
+       iLetter.classList.remove('scale')
+    } else{
+         iLetter.classList.add('scale')
+    }
+}
