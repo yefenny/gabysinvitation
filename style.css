@@ -102,6 +102,8 @@ body{
 }
 }
 
+  
+
 @media (min-width: 1600px) {
 
  .invite{
@@ -120,3 +122,12 @@ body{
 }
 
 
+
+@media (orientation: landscape) {
+  /* CSS rules to apply when the width is greater than the height */
+     .invite{
+    object-fit: cover;
+    top: -20vh;
+    width: 80vh;
+}
+}
