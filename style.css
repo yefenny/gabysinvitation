@@ -35,7 +35,7 @@ body{
     position: relative;
     align-items: center;
     justify-content: center;
-    justify-self: center;
+    margin: auto;
 }
 
 
@@ -69,22 +69,36 @@ body{
 }
 
 @media (max-width: 767px) {
-    body{
-          /* background-position: 30% 75%; */
-          background-size: cover;
-    }
+
  .envelope img{
     object-fit: cover;
     width: 90%;
 }
+
 }
 @media (min-width: 1200px) {
-    body{
-          /* background-position: 30% 75%; */
-          background-size: cover;
-    }
+
+ .invite{
+    object-fit: cover;
+    width: 60vw;
+}
+}
+
+@media (min-width: 1600px) {
+
  .invite{
     object-fit: cover;
     width: 50vw;
 }
 }
+@media (min-width: 1800px) {
+
+ .invite{
+    position: relative;
+    top: -10%;
+    object-fit: cover;
+    width: 70vh;
+}
+}
+
+
