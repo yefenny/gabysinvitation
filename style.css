@@ -14,13 +14,13 @@ body{
 }
 .envelope{
 
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    transition: transform 0.6s ease;
+    transition: visibility 0s linear 300ms, opacity 500ms ease;
 }
 .envelope img{
     object-fit: cover;
@@ -28,7 +28,7 @@ body{
 
 }
 .invite{
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 80vw;
     height: 80vh;
@@ -40,32 +40,46 @@ body{
 
 
 .open-envelope{
+    
+     opacity: 0;
+    visibility: hidden;
      object-fit: cover;
     position: absolute;
     width: 65%;
     top: -20%;
     left: 0%;
+     transition: visibility 1s linear 300ms, opacity 800ms ease;
     
 }
 
 
 .close-envelope{
+    opacity: 0;
+    visibility: hidden;
      object-fit: cover;
     position: absolute;
     width: 65%;
     top: 40%;
     right: 0%;
+     transition: visibility 1s linear 300ms, opacity 800ms ease;
     /* transform: rotate(-0.25turn); */
     
 }
 
 .invite-letter{
+    opacity: 0;
+    visibility: hidden;
     object-fit: cover;
     position: absolute;
     top: -5%;
     width: 120%;
-  
+   transition: visibility 1s linear 300ms, opacity 900ms ease, transform 200ms ease-in;
     
+}
+
+.invite-letter:hover{
+    transform: scale(1.5);
+
 }
 
 @media (max-width: 767px) {
