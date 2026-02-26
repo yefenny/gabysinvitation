@@ -77,7 +77,7 @@ body{
     
 }
 
-.invite-letter:hover{
+.invite-letter:active{
     transform: scale(1.5);
 
 }

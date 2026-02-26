@@ -13,13 +13,13 @@ function hideEnvelope(){
 
 setTimeout(() => {
    oEnvelope.style.visibility ="visible";
-    oEnvelope.style.opacity = "1"
+    oEnvelope.style.opacity = "1.0"
     setTimeout(() => {
        cEnvelope.style.visibility ="visible";
-    cEnvelope.style.opacity = "1"
+    cEnvelope.style.opacity = "1.0"
         setTimeout(() => {
        iLetter.style.visibility ="visible";
-    iLetter.style.opacity = "1"
+    iLetter.style.opacity = "1.0"
 }, 300);
 }, 300);
 }, transitionDuration);
