@@ -77,7 +77,7 @@ body{
     
 }
 
-.invite-letter:active{
+.invite-letter:focus{
     transform: scale(1.5);
 
 }
