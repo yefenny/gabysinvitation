@@ -108,7 +108,7 @@ body{
 
  .invite{
     object-fit: cover;
-    width: 50vw;
+    width: 60vw;
 }
 }
 @media (min-width: 1800px) {
