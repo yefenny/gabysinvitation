@@ -5,7 +5,8 @@ function hideEnvelope(){
     const oEnvelope = document.getElementById("open-envelope");
     const cEnvelope = document.getElementById("close-envelope");
     const iLetter = document.getElementById("invite-letter");
-
+    
+   document.body.style.backgroundImage = "url('images/linen.jpg')"
     envelope.style.opacity = "0";
     envelope.style.display = "none";
     invite.style.display = "flex";
