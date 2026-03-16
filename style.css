@@ -10,7 +10,8 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: clip;
- align-items:  center;
+    align-items:  center;
+    justify-content: center;
 }
 .envelope{
 
@@ -29,13 +30,18 @@ body{
 }
 .invite{
     display: none;
-    flex-direction: row;
-    width: 80vw;
+    flex-direction: column;
+    width: 100vw;
     height: 80vh;
     position: relative;
     align-items: center;
     justify-content: center;
     margin: auto;
+    
+}
+
+.invite img {
+    overflow: visible;
 }
 
 
@@ -45,8 +51,8 @@ body{
     visibility: hidden;
      object-fit: cover;
     position: absolute;
-    width: 65%;
-    top: -20%;
+    width: 80%;
+    top: -35%;
     left: 0%;
      transition: visibility 1s linear 300ms, opacity 800ms ease;
     
@@ -58,9 +64,10 @@ body{
     visibility: hidden;
      object-fit: cover;
     position: absolute;
-    width: 65%;
-    top: 40%;
+    width: 80%;
+    top: 70%;
     right: 0%;
+    height: 300px;
      transition: visibility 1s linear 300ms, opacity 800ms ease;
     /* transform: rotate(-0.25turn); */
     
@@ -71,8 +78,9 @@ body{
     visibility: hidden;
     object-fit: cover;
     position: absolute;
-    top: -5%;
-    width: 120%;
+    right: -20%;
+    width: 150%;
+    height: 80vh;
    transition: visibility 1s linear 300ms, opacity 900ms ease, transform 200ms ease-in;
     
 }
@@ -83,7 +91,7 @@ body{
 } */
 
 .scale{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 @media (max-width: 767px) {
@@ -92,13 +100,27 @@ body{
     object-fit: cover;
     width: 90%;
 }
-
+}
+@media (min-width: 750px) {
+     .invite{
+    width: 70vw;
+}
 }
 @media (min-width: 1200px) {
 
  .invite{
     object-fit: cover;
     width: 60vw;
+}
+.open-envelope{
+    width: 70%;
+    
+}
+
+
+.close-envelope{
+    width: 70%;
+    
 }
 }
 
@@ -127,13 +149,22 @@ body{
 
     .envelope img{
     object-fit: cover;
-    width: 90vh;
+    width: 70vh;
 
 }
   /* CSS rules to apply when the width is greater than the height */
      .invite{
     object-fit: cover;
-    top: -20vh;
-    width: 80vh;
+    top: -5vh;
+    width: 70vh;
+}
+.close-envelope{
+    top: 70%; 
+}
+.invite-letter{
+
+    right: -5%;
+    width: 120%;
+    
 }
 }
