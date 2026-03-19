@@ -78,11 +78,23 @@ body{
     visibility: hidden;
     object-fit: cover;
     position: absolute;
+    top: 10%;
     right: -20%;
     width: 150%;
     height: 80vh;
    transition: visibility 1s linear 300ms, opacity 900ms ease, transform 200ms ease-in;
     
+}
+
+.attire{
+        opacity: 0;
+    visibility: hidden;
+    object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+     width: 60%;
+    bottom: 50%;
+    left: 40%;
 }
 
 /* .invite-letter:focus{
@@ -165,6 +177,19 @@ body{
 
     right: -5%;
     width: 120%;
+    
+}
+
+.attire{
+
+    bottom: 45%;
+
+}
+
+.close-envelope{
+
+    top: 80%;
+    
     
 }
 }
